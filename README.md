@@ -43,4 +43,33 @@ Adds:
 Uses **MobileNetV2** pretrained on ImageNet:
 - Phase 1: freeze base layers, train classifier  
 - Phase 2: unfreeze top layers and fine-tune  
-- More stable but limited by dataset size  
+- More stable but limited by dataset size
+
+
+### Getting started 
+Clone the repository
+
+```git clone https://github.com/yjiang1003/CS484-Project.git```
+
+create a virtual environment
+
+Windows:
+
+```python -m venv venv ```
+
+```.\venv\Scripts\Activate.ps1```
+
+Mac/Linux:
+
+```python3 -m venv venv```
+
+```source venv/bin/activate```
+
+ensure the correct packages are installed by running this command 
+
+```pip install -r requirements.txt```
+
+Download the dataset from Kaggle and change the path within the .ipynb file
+https://www.kaggle.com/datasets/sid321axn/covid-cxr-image-dataset-research/data.​
+
+```data_path = pathlib.Path("YOUR PATH TO DATASET")```
